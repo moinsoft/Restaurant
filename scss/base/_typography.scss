@@ -1,0 +1,85 @@
+@import './variable';
+
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@400;700&family=Lato:wght@300;400;700;900&family=Yeseva+One&display=swap');
+
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline:none;
+  vertical-align: middle;
+}
+
+
+body {
+  font-family: $primaryFontFamily;
+  font-size: $primaryFontSize;
+  color: $primaryFontColor;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.3s linear;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+
+/*====================
+Common CSS
+======================*/
+
+.container {
+  max-width: 73.125rem;  //1170px
+  margin: 0 auto;
+}
+
+
+
+/*====================
+Margin & Padding
+======================*/
+
+@for $i from 1 through 4 {
+
+  .mt-#{$i * 25} {
+    margin-top: $i * 25px;
+  }
+
+  .mb-#{$i * 25} {
+    margin-bottom: $i * 25px;
+  }
+
+  
+  .pt-#{$i * 25} {
+    padding-top: $i * 25px;
+  }
+
+  .pb-#{$i * 25} {
+    padding-bottom: $i * 25px;
+  }
+
+}
+
+
+/*====================
+Alignment
+======================*/
+
+$list: left, right, center, justify;
+
+@each $i in $list {
+  .text-#{$i} {
+    text-align: $i;
+  }
+}
