@@ -1,0 +1,40 @@
+@import '../base/variable';
+
+/*====================
+Banner Area
+======================*/
+
+.slider{
+
+
+  &__banner{
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__content{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title{
+    color: $whiteColor;
+    font-size: $heroHeading;
+    font-family: $secondaryFontFamily;
+    text-transform: lowercase;
+    font-weight: 500;
+    line-height: 130px;
+  }
+
+
+  .btn{
+    margin: 0 20px;
+  }
+
+
+}
