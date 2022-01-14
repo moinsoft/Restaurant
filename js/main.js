@@ -22,5 +22,17 @@ $(document).ready(function () {
   });
 
 
+  // Slick Slider Active In Banner
+
+  $('.slider').slick({
+    autoplay: true,
+    autoplaySpeed:3000,
+    dots: true,
+    pauseOnDotsHover: true,
+    prevArrow: '<button type="button" class="slick-prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>',
+    nextArrow: '<button type="button" class="slick-next"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>',
+  });
+
+
 
 });

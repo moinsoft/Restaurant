@@ -37,4 +37,75 @@ Banner Area
   }
 
 
+  .slick-arrow{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid $primaryHeadingColor;
+    font-size: $primaryFontSize;
+    color: $primaryHeadingColor;
+    background:transparent;
+    z-index: 2;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &.slick-prev{
+      left: 100px;
+    }
+
+    &.slick-next{
+      right: 100px;
+    }
+
+    &:hover{
+      background: $primaryHeadingColor;
+      color: $whiteColor;
+    }
+
+  }
+
+
+  .slick-dots{
+    position: absolute;
+    left: 50%;
+    transform: translateX( -50%);
+    bottom: 30px;
+
+    li{
+      display: inline-block;
+      margin: 0 15px;
+
+      button{
+        border: 1px solid $primaryHeadingColor;
+        font-size: 10px;
+        color: $primaryHeadingColor;
+        background:transparent;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover{
+          background: $primaryHeadingColor;
+          color: $whiteColor;
+        }
+
+      }
+
+      &.slick-active{
+        button{
+          background: $primaryHeadingColor;
+          color: $whiteColor;
+        }
+      }
+
+    }
+  }
+
+
+
 }
