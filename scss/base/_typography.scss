@@ -50,23 +50,23 @@ Common CSS
 Margin & Padding
 ======================*/
 
-@for $i from 1 through 4 {
+@for $i from 1 through 12 {
 
-  .mt-#{$i * 25} {
-    margin-top: $i * 25px;
+  .mt-#{$i * 10} {
+    margin-top: $i * 10px;
   }
 
-  .mb-#{$i * 25} {
-    margin-bottom: $i * 25px;
+  .mb-#{$i * 10} {
+    margin-bottom: $i * 10px;
   }
 
   
-  .pt-#{$i * 25} {
-    padding-top: $i * 25px;
+  .pt-#{$i * 10} {
+    padding-top: $i * 10px;
   }
 
-  .pb-#{$i * 25} {
-    padding-bottom: $i * 25px;
+  .pb-#{$i * 10} {
+    padding-bottom: $i * 10px;
   }
 
 }

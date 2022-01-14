@@ -1,0 +1,45 @@
+@import '../base/variable';
+
+/*====================
+Header Section
+======================*/
+
+.header{
+  padding: 20px 0;
+
+
+  &__content{
+    display: grid;
+    grid-template-columns: 2fr 7fr 1fr;
+    column-gap: 20px;
+    align-items: center;
+  }
+
+  &__logo{
+    width: 150px;
+    height: auto;
+  }
+
+  &__nav-list{
+    display: grid;
+    grid-template-columns: repeat(6,auto);
+    justify-content: end;
+    column-gap: 20px;
+  }
+
+  &__nav-link{
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: $blackColor;
+  }
+
+  .social-menu{
+    &__nav-link{
+      color: $primaryHeadingColor;
+      font-size: $btnFont;
+      margin: 0 5px;
+    }
+  }
+}
+
