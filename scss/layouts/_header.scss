@@ -10,6 +10,20 @@ Header Area
   z-index: 999;
   left: 0;
   right: 0;
+  transition: all 0.3s linear;
+
+  &.sticky{
+    background-color: $blackColor;
+    padding: 5px 0;
+
+    .header__logo{
+      width: 100px;
+    }
+
+    .header__nav-link::before{
+      top: -15px;
+    }
+  }
 
 
   &__content{
@@ -22,6 +36,7 @@ Header Area
   &__logo{
     width: 150px;
     height: auto;
+    transition: all 0.3s linear;
   }
 
   &__nav-list{
