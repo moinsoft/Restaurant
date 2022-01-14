@@ -46,6 +46,14 @@ Header Area
     column-gap: 20px;
   }
 
+  &__nav-item{
+    &.current{
+      .header__nav-link{
+        color: $primaryHeadingColor;
+      }
+    }
+  }
+
   &__nav-link{
     display: inline-block;
     text-transform: uppercase;

@@ -10,3 +10,17 @@ $(window).on('scroll', function () {
 
 
 });
+
+
+
+$(document).ready(function () {
+
+  // Smooth Scroll And Current Class Active
+
+  $('.header__nav').onePageNav({
+    currentClass: 'current'
+  });
+
+
+
+});

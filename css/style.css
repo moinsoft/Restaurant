@@ -332,6 +332,9 @@ Header Area
   justify-content: end;
   column-gap: 20px;
 }
+.header__nav-item.current .header__nav-link {
+  color: #cc9900;
+}
 .header__nav-link {
   display: inline-block;
   text-transform: uppercase;
