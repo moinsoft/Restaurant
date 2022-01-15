@@ -1,0 +1,21 @@
+@import '../base/variable';
+
+/*====================
+About Area
+======================*/
+
+.about{
+
+  &__box{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 50px;
+  }
+
+  &__description{
+    color: $primaryFontColor;
+    line-height: 30px;
+  }
+
+
+}

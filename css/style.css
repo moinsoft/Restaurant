@@ -37,6 +37,19 @@ Common CSS
   margin: 0 auto;
 }
 
+.bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.section-title {
+  font-family: "Yeseva One", cursive;
+  font-size: 36px;
+  font-weight: 500;
+  color: #cc9900;
+}
+
 /*====================
 Common Button CSS
 ======================*/
@@ -442,6 +455,19 @@ Banner Area
 .slider .slick-dots li.slick-active button {
   background: #cc9900;
   color: #ffffff;
+}
+
+/*====================
+About Area
+======================*/
+.about__box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 50px;
+}
+.about__description {
+  color: #4c4c4c;
+  line-height: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

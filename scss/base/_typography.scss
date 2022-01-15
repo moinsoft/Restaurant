@@ -44,6 +44,19 @@ Common CSS
   margin: 0 auto;
 }
 
+.bg{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.section-title{
+  font-family: $secondaryFontFamily;
+  font-size: 36px;
+  font-weight: 500;
+  color: $primaryHeadingColor;
+}
+
 /*====================
 Common Button CSS
 ======================*/
