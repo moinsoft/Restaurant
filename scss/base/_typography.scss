@@ -55,6 +55,10 @@ Common CSS
   font-size: 36px;
   font-weight: 500;
   color: $primaryHeadingColor;
+
+  &--white{
+    color: $whiteColor;
+  }
 }
 
 /*====================

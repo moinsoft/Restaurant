@@ -49,6 +49,9 @@ Common CSS
   font-weight: 500;
   color: #cc9900;
 }
+.section-title--white {
+  color: #ffffff;
+}
 
 /*====================
 Common Button CSS
@@ -469,5 +472,9 @@ About Area
   color: #4c4c4c;
   line-height: 30px;
 }
+
+/*====================
+Ingredients Area
+======================*/
 
 /*# sourceMappingURL=style.css.map */
