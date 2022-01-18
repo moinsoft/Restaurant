@@ -5,3 +5,54 @@ Menu Area
 ======================*/
 
 
+.menu{
+
+  &__box{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 250px;
+  }
+
+  &__title{
+    font-size: $secondaryHeading;
+    color: $secondaryHeadingColor;
+    font-weight: 500;
+    font-family: $secondaryFontFamily;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+    border-bottom: 1px solid $secondaryHeadingColor;
+    margin-bottom: 10px;
+  }
+
+  &__price{
+    float: right;
+  }
+
+  &__item{
+    margin-bottom: 50px;
+    padding: 10px;
+
+    &--special{
+      border: 1px solid $secondaryHeadingColor;
+      position: relative;
+
+      &::after{
+        content: "Special";
+        position: absolute;
+        width: 17%;
+        height: 25px;
+        background-color: $primaryHeadingColor;
+        color: $whiteColor;
+        top: -26px;
+        right: -1px;
+        text-align: center;
+      }
+    }
+  }
+
+
+  &__description{
+    color: $primaryFontColor;
+  }
+
+}

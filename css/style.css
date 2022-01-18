@@ -525,5 +525,45 @@ Ingredients Area
 /*====================
 Menu Area
 ======================*/
+.menu__box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 250px;
+}
+.menu__title {
+  font-size: 1.313rem;
+  color: #c89f2d;
+  font-weight: 500;
+  font-family: "Yeseva One", cursive;
+  text-transform: capitalize;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #c89f2d;
+  margin-bottom: 10px;
+}
+.menu__price {
+  float: right;
+}
+.menu__item {
+  margin-bottom: 50px;
+  padding: 10px;
+}
+.menu__item--special {
+  border: 1px solid #c89f2d;
+  position: relative;
+}
+.menu__item--special::after {
+  content: "Special";
+  position: absolute;
+  width: 17%;
+  height: 25px;
+  background-color: #cc9900;
+  color: #ffffff;
+  top: -26px;
+  right: -1px;
+  text-align: center;
+}
+.menu__description {
+  color: #4c4c4c;
+}
 
 /*# sourceMappingURL=style.css.map */
