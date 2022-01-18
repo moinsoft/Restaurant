@@ -494,7 +494,8 @@ Ingredients Area
 ======================*/
 .ingredients__box {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 585px;
+  justify-content: end;
 }
 .ingredients__content {
   color: #ffffff;
