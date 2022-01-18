@@ -55,9 +55,27 @@ Common CSS
   font-size: 36px;
   font-weight: 500;
   color: $primaryHeadingColor;
+  margin-bottom: 60px;
+  position: relative;
+
+  &::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../assets/line-symbol/section_title_border_golden.png);
+    background-repeat: no-repeat;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-24%);
+  }
 
   &--white{
     color: $whiteColor;
+
+    &::before{
+      background-image: url(../../assets/line-symbol/section_title_border_white.png);
+    }
   }
 }
 
