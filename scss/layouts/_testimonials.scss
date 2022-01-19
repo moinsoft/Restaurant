@@ -53,7 +53,42 @@ Testimonials Area
   &__author{
     color: $whiteColor;
     font-size: $btnFont;
+    margin-bottom: 30px;
   }
 
-  
+  .slick-dots{
+
+    li{
+      display: inline-block;
+      margin: 0 5px;
+      line-height: 0;
+      border-radius: 50%;
+      border: 1px solid $borderColor;
+      padding: 2px;
+      transition: all 0.3s ease;
+
+      button{
+        text-indent: 99999px;
+        background:$borderColor;
+        width: 10px;
+        height: 10px;
+        border: 0;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      &:hover,&.slick-active{
+        border: 1px solid $primaryHeadingColor;
+
+        button{
+          background: $primaryHeadingColor;
+        }
+      }
+
+    }
+
+  }
+
+
 }

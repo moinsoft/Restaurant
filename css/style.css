@@ -609,6 +609,32 @@ Testimonials Area
 .reviews__author {
   color: #ffffff;
   font-size: 1.125rem;
+  margin-bottom: 30px;
+}
+.reviews .slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+  line-height: 0;
+  border-radius: 50%;
+  border: 1px solid #c8c6c6;
+  padding: 2px;
+  transition: all 0.3s ease;
+}
+.reviews .slick-dots li button {
+  text-indent: 99999px;
+  background: #c8c6c6;
+  width: 10px;
+  height: 10px;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.reviews .slick-dots li:hover, .reviews .slick-dots li.slick-active {
+  border: 1px solid #cc9900;
+}
+.reviews .slick-dots li:hover button, .reviews .slick-dots li.slick-active button {
+  background: #cc9900;
 }
 
 /*# sourceMappingURL=style.css.map */
