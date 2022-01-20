@@ -5,4 +5,35 @@ Footer Area
 ======================*/
 
 
+.footer{
+  background-color: $footerBgColor;
 
+  &__box{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 50px;
+  }
+
+
+  .section-title{
+    font-size: $specialFontSize;
+
+    &::before{
+      bottom: -45px;
+      transform: translateX(-35%);
+    }
+  }
+
+
+  &__description{
+    color: $secondaryFontColor;
+    line-height: 30px;
+  }
+
+  &__nav-link{
+    margin: 0 8px;
+    color: $secondaryFontColor;
+    font-size: $secondaryHeading;
+  }
+
+}
