@@ -6,3 +6,77 @@ Contact Area
 
 
 
+.reservations{
+
+
+  &__box{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 80px;
+  }
+
+  &__media-object{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 30px;
+  }
+
+  &__img{
+    border: 1px solid $borderColor;
+    padding: 3px;
+  }
+
+  &__description{
+    margin-bottom: 20px;
+  }
+
+
+}
+
+
+
+
+.form{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 30px;
+
+  &__label{
+    float: left;
+    text-transform: capitalize;
+    font-weight: 800;
+    color: $primaryHeadingColor;
+    margin-bottom: 5px;
+  }
+
+  &__input{
+    width: 100%;
+    border: 1px solid $borderColor;
+    padding: 15px;
+    font-size: $primaryFontSize;
+    font-style: italic;
+    text-transform: capitalize;
+    transition: all 0.3s linear;
+
+    &--select{
+      color: $placeholderColor;
+    }
+
+    &:hover,&:focus{
+      border: 1px solid $primaryHeadingColor;
+    }
+
+  }
+
+  &__option{
+    font-style: normal;
+    color: $primaryFontColor;
+  }
+
+  &__btn{
+    .btn{
+      background-color: $primaryHeadingColor;
+    }
+  }
+
+}

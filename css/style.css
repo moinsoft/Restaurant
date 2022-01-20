@@ -640,5 +640,57 @@ Testimonials Area
 /*====================
 Contact Area
 ======================*/
+.reservations__box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 80px;
+}
+.reservations__media-object {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 30px;
+}
+.reservations__img {
+  border: 1px solid #c8c6c6;
+  padding: 3px;
+}
+.reservations__description {
+  margin-bottom: 20px;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+.form__label {
+  float: left;
+  text-transform: capitalize;
+  font-weight: 800;
+  color: #cc9900;
+  margin-bottom: 5px;
+}
+.form__input {
+  width: 100%;
+  border: 1px solid #c8c6c6;
+  padding: 15px;
+  font-size: 1rem;
+  font-style: italic;
+  text-transform: capitalize;
+  transition: all 0.3s linear;
+}
+.form__input--select {
+  color: #757575;
+}
+.form__input:hover, .form__input:focus {
+  border: 1px solid #cc9900;
+}
+.form__option {
+  font-style: normal;
+  color: #4c4c4c;
+}
+.form__btn .btn {
+  background-color: #cc9900;
+}
 
 /*# sourceMappingURL=style.css.map */
