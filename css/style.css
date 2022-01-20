@@ -621,7 +621,7 @@ Testimonials Area
   transition: all 0.3s ease;
 }
 .reviews .slick-dots li button {
-  text-indent: 99999px;
+  text-indent: -9999px;
   background: #c8c6c6;
   width: 10px;
   height: 10px;
@@ -636,5 +636,9 @@ Testimonials Area
 .reviews .slick-dots li:hover button, .reviews .slick-dots li.slick-active button {
   background: #cc9900;
 }
+
+/*====================
+Contact Area
+======================*/
 
 /*# sourceMappingURL=style.css.map */
